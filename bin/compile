@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-echo "-----> Установка браузеров Playwright"
-python -m playwright install chromium
+echo "-----> Установка браузеров Playwright для Python"
+
+# Экспортируем переменную окружения
+export PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-/app/.playwright}
+
+# Устанавливаем браузеры Playwright
+python -m playwright install
