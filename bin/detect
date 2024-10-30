@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "Playwright Python Installer Buildpack"
+exit 0
